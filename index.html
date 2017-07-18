@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <title>Temperature Converter</title>
+	</head>
+	<body>
+		<form id="tempConverter">
+			<fieldset>
+
+				<button id="clearForm" type="button" name="tempClear">Clear data field</button><br><br>
+
+				Enter temperature to convert:&nbsp&nbsp
+				<input id="enter" type="text" name="tempEnter" size="5"><br>
+
+				Convert to:&nbsp&nbsp
+				<label><input id="fahrenheit" type="radio" name="select1" checked="checked">  Fahrenheit</label>&nbsp&nbsp
+				<label><input id="celsius" type="radio" name="select1">  Celsius</label><br><br>
+				<button type="button" id="converter">Submit Temperature</button><br><br>
+
+				Converted Temperature:&nbsp&nbsp
+				<input id="display" type="text" name="tempDisplay" size="5">
+				
+			</fieldset>
+		</form>
+	    <script src="converter.js"></script>
+	</body>
+</html>
