@@ -17,7 +17,6 @@ function resetForm (clickEvent) {
 function toCelsius () {
 	let x = document.getElementById("enter").value;
 	let temp = Math.round((x - 32) * (5 / 9));
-	console.log(temp);
 	document.getElementById("display").value = temp;
 }
 
