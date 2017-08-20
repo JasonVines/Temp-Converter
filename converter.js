@@ -14,16 +14,32 @@ function resetForm (clickEvent) {
 	document.getElementById("tempConverter").reset();
 }
 
+
+// Conversion functions
 function toCelsius () {
 	let x = document.getElementById("enter").value;
 	let temp = Math.round((x - 32) * (5 / 9));
 	document.getElementById("display").value = temp;
+	if (temp <= 0.0) {
+		document.getElementById("display").style.color = "blue";
+	}  else if (temp > 32.0) {
+		document.getElementById("display").style.color = "red";
+	} else {
+		document.getElementById("display").style.color = "darkgreen";
+	}
 }
 
 function toFahrenheit () {
 	let x = document.getElementById("enter").value;
 	let temp = Math.round((x * (9 / 5)) + 32);
 	document.getElementById("display").value = temp;
+	if (temp <= 32.0) {
+		document.getElementById("display").style.color = "blue";
+	}  else if (temp > 90.0) {
+		document.getElementById("display").style.color = "red";
+	} else {
+		document.getElementById("display").style.color = "darkgreen";
+	}
 }
 
 
